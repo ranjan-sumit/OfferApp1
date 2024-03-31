@@ -80,7 +80,7 @@ if st.button('Login') and input_value:
         #st.markdown(offer_html, unsafe_allow_html=True)
     else:
         # Display guidance if login fails
-        st.error('Login failed. Please check your credentials and try again. Or create an account')
+        st.error('Login failed. Please check your credentials and try again. Or create an account!')
         # Enhanced guidance message with HTML and CSS for a light green background
 # Enhanced guidance message with HTML and CSS for a light pink background
         guidance_html = """
