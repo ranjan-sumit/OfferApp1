@@ -52,7 +52,7 @@ elif selected_option == "Phone No":
 if st.button('Login') and input_value:
     # Check if the input value is in the dummy data for the selected option
     if input_value in dummy_data[selected_option]:
-        st.success(f'Login successful for {selected_option} with value: {input_value}')
+        st.success(f'Login successful for {selected_option}: {input_value}')
         
         # Randomly select and display an offer
         selected_offer = random.choice(offers)
