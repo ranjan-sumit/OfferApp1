@@ -18,7 +18,7 @@ dummy_data = {
 offers = ["Offer 1: 10% Off", "Offer 2: Buy 1 Get 1", "Offer 3: Free Shipping"]
 
 # Display the logo at the top of the app
-st.image("logo1.png")  # Adjust the path
+st.image("logo_bar.png")  # Adjust the path
 
 # Enhanced animated heading with continuous animation
 heading_html = """
@@ -26,7 +26,7 @@ heading_html = """
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <div style="text-align: center;">
-    <h1 class="animate__animated animate__pulse animate__infinite" style="color: #0047AB; font-size: 40px;">Buddy Offer App</h1>
+    <h1 class="animate__animated animate__pulse animate__infinite" style="color: #0047AB; font-size: 40px;">Claim Your Offer Now!</h1>
 </div>
 """
 
@@ -52,7 +52,7 @@ elif selected_option == "Phone No":
 if st.button('Login') and input_value:
     # Check if the input value is in the dummy data for the selected option
     if input_value in dummy_data[selected_option]:
-        st.success(f'Login successful for {selected_option}: {input_value}')
+        st.success(f'Login successful for {selected_option} with value: {input_value}')
         
         # Randomly select and display an offer
         selected_offer = random.choice(offers)
@@ -72,7 +72,7 @@ if st.button('Login') and input_value:
         }}
         </style>
         <div class="offer-container">
-            <h2 style="color: #34c759;">Congratulations! You've received a special offer:</h2>
+            <h2 style="color: #34c759;">Congratulations! Your special offer:</h2>
             <p style="font-size:24px; color: #34c759;"><b>{selected_offer}</b></p>
         </div>
         """
@@ -80,7 +80,7 @@ if st.button('Login') and input_value:
         #st.markdown(offer_html, unsafe_allow_html=True)
     else:
         # Display guidance if login fails
-        st.error('Login failed. Please check your credentials and try again. Or create an account!')
+        st.error('Login failed. Please check your credentials and try again. Or create an account')
         # Enhanced guidance message with HTML and CSS for a light green background
 # Enhanced guidance message with HTML and CSS for a light pink background
         guidance_html = """
