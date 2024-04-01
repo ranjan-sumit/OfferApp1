@@ -26,7 +26,7 @@ heading_html = """
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <div style="text-align: center;">
-    <h1 class="animate__animated animate__pulse animate__infinite" style="color: #0047AB; font-size: 40px;">Budder Offer App</h1>
+    <h1 class="animate__animated animate__pulse animate__infinite" style="color: #0047AB; font-size: 40px;">Buddy Offer App</h1>
 </div>
 """
 
