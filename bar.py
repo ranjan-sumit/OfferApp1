@@ -111,7 +111,7 @@ if st.button('Login') and input_value:
         }}
         </style>
         <div class="offer-container">
-            <h2 style="color: #34c759;">Regsiter Now and Redeem Special Offer for New Customer:</h2>
+            <h2 style="color: #34c759;">Register Now and Redeem Special Offer for New Customer:</h2>
             <p style="font-size:24px; color: #34c759;"><b>{selected_offer_new_cust}</b></p>
         </div>
         """
