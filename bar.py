@@ -26,7 +26,7 @@ heading_html = """
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <div style="text-align: center;">
-    <h1 class="animate__animated animate__pulse animate__infinite" style="color: #0047AB; font-size: 40px;">Claim Your Offer Now!</h1>
+    <h1 class="animate__animated animate__pulse animate__infinite" style="color: #0047AB; font-size: 40px;">My Offer Genie !</h1>
 </div>
 """
 
@@ -72,7 +72,7 @@ if st.button('Login') and input_value:
         }}
         </style>
         <div class="offer-container">
-            <h2 style="color: #34c759;">Congratulations! Your special offer:</h2>
+            <h2 style="color: #34c759;">Your special offer:</h2>
             <p style="font-size:24px; color: #34c759;"><b>{selected_offer}</b></p>
         </div>
         """
