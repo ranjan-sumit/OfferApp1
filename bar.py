@@ -94,8 +94,29 @@ if st.button('Login') and input_value:
             </p>
         </div>
         """
-
+        selected_offer_new_cust="Get Flat 25% Off upto 50 AED on your first purchase. "
+        offer_html_new = f"""
+        <style>
+        @keyframes fadeIn {{
+            0% {{opacity: 0;}}
+            100% {{opacity: 1;}}
+        }}
+        .offer-container {{
+            background-color: #e6f4ea; /* Light green background */
+            border-left: 5px solid #34c759; /* Darker green border on the left for emphasis */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            animation: fadeIn 2s ease;
+        }}
+        </style>
+        <div class="offer-container">
+            <h2 style="color: #34c759;">Special offer for New Customer:</h2>
+            <p style="font-size:24px; color: #34c759;"><b>{selected_offer_new_cust}</b></p>
+        </div>
+        """
 
 
 
         st.markdown(guidance_html, unsafe_allow_html=True)
+        st.markdown(offer_html_new, unsafe_allow_html=True)
