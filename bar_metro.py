@@ -174,7 +174,7 @@ import streamlit as st
 import random
 import streamlit.components.v1 as components
 from streamlit_lottie import st_lottie
-#import database
+import database
 
 st.image("final_img.png")
 
