@@ -178,14 +178,14 @@ from streamlit_lottie import st_lottie
 
 st.image("final_img.png")
 
-col1, col2, col3 = st.columns(3)
+# col1, col2, col3 = st.columns(3)
 
-# Load and display the second Lottie animation in the second column
-with col2:
-    st_lottie("https://lottie.host/293db166-32fb-4ff9-b11d-489df8ca1c04/zZAqx4ZrQN.json",
-             quality="low",
-             height=200,
-             width=200)
+# # Load and display the second Lottie animation in the second column
+# with col2:
+#     st_lottie("https://lottie.host/293db166-32fb-4ff9-b11d-489df8ca1c04/zZAqx4ZrQN.json",
+#              quality="low",
+#              height=200,
+#              width=200)
 
 # Enhanced animated heading with continuous animation
 heading_html = """
