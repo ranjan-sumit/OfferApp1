@@ -6,23 +6,12 @@ import os
 import nzpy
 
 def net_conn():
-    netezza_conn = nzpy.connect(user="CORP_SUPPORT",
-                        password="Welcome@corp",
-                        host='10.249.118.127',
-                        port=5480, 
-                        database="DM_CORP_SUPPORT",
-                        securityLevel=1,
-                        logLevel=0)
+    
     return netezza_conn
 
 def init_connection():
     
-    postgre_uri = sqlalchemy.engine.URL.create("postgresql+psycopg2",
-                                               username='promouser@psql-promotool-d.postgres.database.azure.com',
-                                               database='c4apdb',
-                                               host='10.101.1.4',
-                                               password='^&*()%$#@!',
-                                               port=5432)
+
     
     postgres_conn = create_engine(postgre_uri)
     return postgres_conn
