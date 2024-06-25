@@ -174,18 +174,18 @@ import streamlit as st
 import random
 import streamlit.components.v1 as components
 from streamlit_lottie import st_lottie
-import database
+#import database
 
 st.image("final_img.png")
 
-col1, col2, col3 = st.columns(3)
+# col1, col2, col3 = st.columns(3)
 
-# Load and display the second Lottie animation in the second column
-with col2:
-    st_lottie("https://lottie.host/293db166-32fb-4ff9-b11d-489df8ca1c04/zZAqx4ZrQN.json",
-             quality="low",
-             height=200,
-             width=200)
+# # Load and display the second Lottie animation in the second column
+# with col2:
+#     st_lottie("https://lottie.host/293db166-32fb-4ff9-b11d-489df8ca1c04/zZAqx4ZrQN.json",
+#              quality="low",
+#              height=200,
+#              width=200)
 
 # Enhanced animated heading with continuous animation
 heading_html = """
@@ -234,9 +234,9 @@ if st.button('Login') and (input_value_shareid or input_value_emailid or input_v
     with st.spinner("Your offer is being prepared. Kindly hold on!"):
         offer = None
         if input_value_shareid:
-            offer = database.get_offer_shareid(input_value_shareid)
+            offer = "5% cashback on shop of 200 AED Instore Shopping + Free Meal of the Day - Breakfast/Lunch/Dinner "
         elif input_value_emailid:
-            offer = database.get_offer_emailid(input_value_emailid)
+            offer = "5% cashback on shop of 200 AED Instore Shopping + Free Meal of the Day - Breakfast/Lunch/Dinner "
         elif input_value_phoneno:
             if input_value_phoneno == "819719934":
                 login_flag = True
